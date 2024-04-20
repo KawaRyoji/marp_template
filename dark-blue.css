@@ -1,0 +1,224 @@
+/* @theme dark-blue */
+
+@import "gaia";
+
+:root {
+    --bg-color: #222831;
+    --light-gray: #393E46;
+    --text: #EEEEEE;
+    --accent: #00ADB5;
+    --sub-accent: #06a2aace;
+
+    font-family: "moralerspace Argon HW", Pier Sans, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+    font-weight: initial;
+
+    background-color: var(--bg-color);
+}
+
+/* Common style */
+h1 {
+    color: var(--accent);
+    padding-bottom: 2mm;
+    margin-bottom: 4mm;
+}
+
+h2 {
+    color: var(--accent);
+}
+
+h3 {
+    color: var(--sub-accent);
+}
+
+h4 {
+    color: var(--sub-accent);
+}
+
+h5 {
+    color: var(--sub-accent);
+}
+
+h6 {
+    color: var(--sub-accent);
+}
+
+a {
+    color: var(--text);
+}
+
+p {
+    color: var(--text);
+}
+
+text {
+    color: var(--text);
+}
+
+ul {
+    color: var(--text);
+}
+
+li {
+    color: var(--text);
+}
+
+ol {
+    list-style-position: inside;
+}
+
+img {
+    background-color: var(--light-gray);
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    color: var(--text);
+}
+
+strong {
+    color: var(--text);
+    font-weight: inherit;
+    font-weight: 800;
+}
+
+mjx-container {
+    color: var(--text);
+}
+
+marp-pre {
+    background-color: var(--light-gray);
+    border-color: var(--accent);
+}
+
+section::after {
+    color: var(--accent);
+}
+
+code, pre {
+    color: #9cdcfe !important;
+    background: #1e1e1e !important;
+}
+
+.hljs-keyword {
+    color: #c586c0 !important;
+}
+
+.hljs-keyword.def {
+    color: #569cd6 !important;
+    font-style: initial !important;
+}
+
+.hljs-type {
+    color: #6adb28 !important
+}
+
+.hljs-variable {
+    color: var(--text) !important;
+}
+
+.hljs-string {
+    color: #ce9178 !important;
+}
+
+.hljs-comment {
+    color: #7ba85f !important;
+}
+
+.hljs-class-name {
+    color: #38cdae !important;
+}
+
+.hljs-function {
+    color: #dcdcaa !important;
+}
+
+.hljs-params {
+    color: #9cdcfe !important;
+}
+
+.hljs-operator, .hljs-punctuation {
+    color: #c8c8c8 !important;
+}
+
+.hljs-number {
+    color: #bcd2b0 !important;
+}
+
+.hljs-literal {
+    color: #569cd6 !important;
+}
+
+.hljs-boolean {
+    color: #569cd6 !important;
+}
+
+.hljs-interpolation .hljs-punctuation {
+    color: #569cd6 !important;
+}
+
+.hljs-builtin {
+    color: #e3e3e3 !important;
+    font-style: initial !important;
+}
+
+
+section.hsp2 {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 1fr;
+    grid-template-areas:
+        "head-cell head-cell"
+        "subleft-cell subright-cell"
+        ". .";
+}
+
+section.hsp2 h2 {
+    grid-area: head-cell;
+}
+
+section.hsp2 .slc {
+    grid-area: subleft-cell;
+    text-align: center;
+}
+
+section.hsp2 .src {
+    grid-area: subright-cell;
+    text-align: center;
+}
+
+section.hsp3 {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 15% 15% 1fr;
+    grid-template-areas:
+        "head-cell head-cell head-cell"
+        "subleft-cell submid-cell subright-cell"
+        ". . .";
+}
+
+section.hsp3 h2 {
+    grid-area: head-cell;
+}
+
+section.hsp3 .slc {
+    grid-area: subleft-cell;
+    text-align: center;
+}
+
+section.hsp3 .smc {
+    grid-area: submid-cell;
+    text-align: center;
+}
+
+section.hsp3 .src {
+    grid-area: subright-cell;
+    text-align: center;
+}
